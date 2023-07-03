@@ -54,6 +54,7 @@ struct SpotDetailView: View {
             Group {
                 TextField("Name", text: $spot.name)
                     .font(.title)
+                    .lineLimit(1)
                 TextField("Address", text: $spot.address)
                     .font(.title2)
             }
